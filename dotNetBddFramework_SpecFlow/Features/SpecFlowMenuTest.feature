@@ -1,10 +1,13 @@
-﻿Feature: SpecFlowMenuTest
+﻿# you should rename the file to SpecflowMenu
+# Test at the end is redundant as the feature file is supposed to be a collection of scenarios
+Feature: SpecFlowMenuTest
 		As a user, I want to navigate to the SpecFlow
 		Installation page using the website menu
 
 @smoke
 Scenario: Navigate to the Installation page using the menu
-	Given SpecFlow website is loaded	
+	Given SpecFlow website is loaded
+	# please fix formatting
 When I hover over the "Docs" menu item
 And I select "SpecFlow"
 And I click on the 'search docs' field
