@@ -15,11 +15,9 @@ namespace PageObjects
             _wait.Until(ExpectedConditions.ElementToBeClickable(_searchDocsField)).Click();
         }
 
-        // this method either should have a different name
-        // or should accept a string argument as the text to be entered
-        public void InsertText()
+        public void InsertText(string text)
         {
-            _wait.Until(ExpectedConditions.ElementIsVisible(_popUpWindowInput)).SendKeys("Installation");
+            _wait.Until(ExpectedConditions.ElementIsVisible(_popUpWindowInput)).SendKeys(text);
         }
 
         public void SelectResult()
